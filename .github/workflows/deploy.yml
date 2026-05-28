@@ -36,3 +36,5 @@ jobs:
         with:
           app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
           images: ${{ secrets.REGISTRY_LOGIN_SERVER }}/vite-docker-01:latest
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+
