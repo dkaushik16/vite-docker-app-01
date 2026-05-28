@@ -35,7 +35,7 @@ jobs:
       - name: Deploy to Azure Container Apps
         uses: azure/container-apps-deploy-action@v1
         with:
-          acrName: vitedockerregistry
+          acrName: vitedockertest01
           containerAppName: vite-container-app
-          resourceGroup: rg-vite-app
+          resourceGroup: rg-dk-test
           imageToDeploy: ${{ secrets.REGISTRY_LOGIN_SERVER }}/vite-docker-01:latest
